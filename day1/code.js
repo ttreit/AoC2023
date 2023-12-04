@@ -16,14 +16,16 @@ function findFirstNumber() {
         for (let i = 0; i < input.length; i++) {
             console.log('input ', input);
             let iCharacter = input[i];
-            console.log('iCharacter ', iCharacter);
             if (numbers.some(x => iCharacter.includes(x))) {
-                console.log('iCharacter contains a number');
+                console.log('iCharacter contains the number ', iCharacter);
                 extractedCharacters = extractedCharacters.concat(iCharacter);
                 console.log('extractedCharacters ', extractedCharacters, typeof extractedCharacters);
             } else if (extractedCharacters === '') {
                 continue;
-            }  else {
+            } else {
+                console.log('**** Not a Number, Not Blank ****')
+                console.log('i =', i);
+                iterator = i;
                 break;
             }
         } 
