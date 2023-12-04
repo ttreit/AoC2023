@@ -11,7 +11,7 @@ function findfirstCharacter() {
         const returnArray = [firstNumber, iterator];
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-        input = 'a12b0c2';
+        input = '1212b';
     
         for (let i = 0; i < input.length; i++) {
             console.log('input ', input);
@@ -23,6 +23,15 @@ function findfirstCharacter() {
                 console.log('firstCharacter ', firstCharacter, typeof firstCharacter);
             } else if (firstCharacter === '0') {
                 continue;
+            } else if (true) {
+                console.log('TRUE FALSE ELSE IF');
+                console.log('firstCharacter ', firstCharacter, typeof firstCharacter);
+                console.log('i is currently ', i);
+                iterator = i;
+                firstNumber = parseInt(firstCharacter);
+                console.log('firstNumber after parseInt ', firstNumber, typeof firstCharacter);
+                break;
+
             } else {
                 console.log('firstCharacter ', firstCharacter, typeof firstCharacter);
                 console.log('i is currently ', i);
