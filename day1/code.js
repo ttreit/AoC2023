@@ -23,25 +23,12 @@ function findFirstNumber() {
                 console.log('extractedCharacters ', extractedCharacters, typeof extractedCharacters);
             } else if (extractedCharacters === '') {
                 continue;
-            } else if (i === input.length - 1) {
-                console.log('*****TRUE FALSE ELSE IF*****');
-                console.log('input.length ', input.length);
-                console.log('extractedCharacters ', extractedCharacters, typeof extractedCharacters);
-                console.log('i is currently ', i);
-                iterator = i;
-                extractedNumber = parseInt(extractedCharacters);
-                console.log('firstNumber after parseInt ', extractedNumber, typeof extractedCharacters);
-                break;
-            } else {
-                console.log('extractedCharacters ', extractedCharacters, typeof extractedCharacters);
-                console.log('i is currently ', i);
-                iterator = i;
-                extractedNumber = parseInt(extractedCharacters);
-                console.log('firstNumber after parseInt ', extractedNumber, typeof extractedCharacters);
+            }  else {
                 break;
             }
         } 
-
+        //parseInt 
+        extractedNumber = parseInt(extractedCharacters);
         console.log(extractedNumber, iterator);
         returnArray[0] = extractedNumber;
         returnArray[1] = iterator;
