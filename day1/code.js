@@ -2,15 +2,15 @@ function simpleFunction() {
     console.log('I am a simple function');
 }
 
-function findFirstNumber() {
+function findNumber() {
     //Variables
         let input;
         let extractedCharacters = '';
         let extractedSecondCharacters = '';
         let extractedNumber1;
-        let extractedNumber2;   
-        let iterator = 0;
-        const returnArray = [extractedNumber1, extractedNumber2];
+        let extractedNumber2;  
+        let finalNumber = 0; 
+        let total = 0;
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
         input = 'n1b265h75c7';
@@ -29,17 +29,18 @@ function findFirstNumber() {
                 console.log('IF #2 - extractedSecondCharacters ', extractedSecondCharacters, typeof extractedSecondCharacters);          
             } 
         } 
+        
+        //concatonate digits as text
+        finalNumber =  extractedCharacters.concat(extractedSecondCharacters);
+        console.log('Concat ', finalNumber);
+        
         //parseInt 
-        extractedNumber1 = parseInt(extractedCharacters);
-        console.log('extractedNumber1 ', extractedNumber1);
-        extractedNumber2 = parseInt(extractedSecondCharacters);
-        console.log('extractedNumber2 ', extractedNumber2);
-        returnArray[0] = extractedNumber1;
-        returnArray[1] = extractedNumber2;
-        return returnArray;
+        total = total + parseInt(finalNumber)
+        console.log('TOTAL ', total);
+        return total;
     }
 
-let oneNumber = findFirstNumber();
+let oneNumber = findNumber();
 console.log('oneNumber ', oneNumber, typeof oneNumber);
 
 simpleFunction();
