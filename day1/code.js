@@ -4,7 +4,7 @@
 function extractNumbers() {
 //Variables
     let input;
-    let firstNumber;
+    let firstNumber = '0';
     let text;
     const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     let lastNumber;
@@ -18,12 +18,14 @@ function extractNumbers() {
     for (let i = 0; i < input.length; i++) {
         // Get first number
         console.log('input ', input);
-        let nextCharacter = input[i];
-        console.log('nextCharacter ', nextCharacter);
-        if (numbers.some(x => nextCharacter.includes(x))) {
-            console.log('nextCharacter contains a number');
+        let iCharacter = input[i];
+        console.log('iCharacter ', iCharacter);
+        if (numbers.some(x => iCharacter.includes(x))) {
+            console.log('iCharacter contains a number');
+            firstNumber = firstNumber.concat(iCharacter);
+            console.log('firstNumber ', firstNumber, typeof firstNumber);
         }
-        console.log('typeof nextCharacter ', typeof nextCharacter);
+        console.log('typeof iCharacter ', typeof iCharacter);
 
         // let parsedCharacter = nextCharacter;
         // console.log('typeof parsedCharacter ', typeof parsedCharacter);
