@@ -11,7 +11,7 @@ function findFirstNumber() {
         const returnArray = [extractedNumber, iterator];
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-        input = '13b';
+        input = '12';
     
         for (let i = 0; i < input.length; i++) {
             console.log('input ', input);
