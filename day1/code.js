@@ -2,16 +2,14 @@ function testFunction() {
     console.log('I am a simple test function');
 }
 
-function findNumber() {
+function findNumber(input) {
     //Variables
-        let input;
         let extractedCharacters = '';
         let extractedSecondCharacters = '';
         let finalNumber = 0; 
         let total = 0;
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-        input = 'bd15ab';
         console.log('input ', input);
 
         for (let i = 0; i < input.length; i++) {
@@ -50,7 +48,7 @@ function findNumber() {
         return total;
     }
 
-let oneNumber = findNumber();
+let oneNumber = findNumber('');
 console.log('oneNumber ', oneNumber, typeof oneNumber);
 
 testFunction();
