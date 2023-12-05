@@ -7,16 +7,14 @@ function findNumber() {
         let input;
         let extractedCharacters = '';
         let extractedSecondCharacters = '';
-        let extractedNumber1;
-        let extractedNumber2;  
         let finalNumber = 0; 
         let total = 0;
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-        input = 'n1b265h75c7';
-    
+        input = 'b8b';
+        console.log('input ', input);
+
         for (let i = 0; i < input.length; i++) {
-            console.log('input ', input);
             let iCharacter = input[i];
             if (extractedCharacters === "" && numbers.some(x => iCharacter.includes(x))) {
                 console.log('IF #1 - iCharacter contains  ', iCharacter);
@@ -31,6 +29,11 @@ function findNumber() {
         } 
         
         //concatonate digits as text
+        console.log('extractedCharacters ', extractedCharacters);
+        console.log('extractedSecondCharacters ', extractedSecondCharacters);
+        if (extractedSecondCharacters === "") {
+            extractedSecondCharacters = extractedCharacters;
+        }
         finalNumber =  extractedCharacters.concat(extractedSecondCharacters);
         console.log('Concat ', finalNumber);
         
