@@ -1,5 +1,5 @@
-function simpleFunction() {
-    console.log('I am a simple function');
+function testFunction() {
+    console.log('I am a simple test function');
 }
 
 function findNumber() {
@@ -53,4 +53,4 @@ function findNumber() {
 let oneNumber = findNumber();
 console.log('oneNumber ', oneNumber, typeof oneNumber);
 
-simpleFunction();
+testFunction();
