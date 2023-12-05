@@ -1,7 +1,3 @@
-function testFunction() {
-    console.log('I am a simple test function');
-}
-
 function findNumber(input) {
         let extractedCharacters = '';
         let extractedSecondCharacters = '';
@@ -17,7 +13,7 @@ function findNumber(input) {
                 extractedSecondCharacters = iCharacter;         
             } 
         } 
-        
+
         if (extractedCharacters ===  "") {
             return 0;
         }
@@ -30,13 +26,7 @@ function findNumber(input) {
     }
 
 
-    function totalNumbers() {
-        let inputArray = [
-            'a1b2c3d4e5f',
-            'pqr3stu8vwx',
-            'treb7uchet',
-            '1abc2'
-        ]
+    function totalNumbers(inputArray) {
         
         let total = 0;
         inputArray.forEach(string => {
@@ -47,4 +37,9 @@ function findNumber(input) {
         return total;
     }
 
-totalNumbers();
+totalNumbers( [
+    'a1b2c3d4e3f',
+    'pqr3stu8vwx',
+    'treb7uchet',
+    '1abc1'
+]);
