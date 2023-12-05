@@ -7,7 +7,7 @@ function findNumber(input) {
         let extractedCharacters = '';
         let extractedSecondCharacters = '';
         let finalNumber = 0; 
-        let total = 0;
+        let final = 0;
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
         console.log('input ', input);
@@ -43,12 +43,33 @@ function findNumber(input) {
         console.log('Concat ', finalNumber);
         
         //parseInt 
-        total = total + parseInt(finalNumber)
-        console.log('TOTAL ', total);
+        final = final + parseInt(finalNumber)
+        console.log('Final from findNumber ', final);
+        return final;
+    }
+
+
+    function totalNumbers() {
+        console.log('This is the total numbers function')
+
+        // define two inputs for development purposes
+
+        let input1 = '1bg6a2';
+        let input2 = '5he8';
+        let output1;
+        let output2;
+        let total;
+
+        output1 = findNumber(input1);
+        console.log('output1 ', output1);
+        output2 = findNumber(input2);
+        total = output1 + output2;
+        console.log('Total from totalNumbers ', total);
         return total;
     }
 
-let oneNumber = findNumber('');
-console.log('oneNumber ', oneNumber, typeof oneNumber);
+// let oneNumber = findNumber('1jk2');
+// console.log('oneNumber ', oneNumber, typeof oneNumber);
 
+totalNumbers();
 testFunction();
