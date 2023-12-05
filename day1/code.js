@@ -11,7 +11,7 @@ function findNumber() {
         let total = 0;
         const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-        input = 'b8b';
+        input = 'bd15ab';
         console.log('input ', input);
 
         for (let i = 0; i < input.length; i++) {
@@ -28,7 +28,14 @@ function findNumber() {
             } 
         } 
         
+
+        // test for no digits and return 0 if none
+
+        if (extractedCharacters ===  "") {
+            return 0;
+        }
         //concatonate digits as text
+        
         console.log('extractedCharacters ', extractedCharacters);
         console.log('extractedSecondCharacters ', extractedSecondCharacters);
         if (extractedSecondCharacters === "") {
