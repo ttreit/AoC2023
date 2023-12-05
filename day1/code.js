@@ -35,11 +35,11 @@ function findNumber(input) {
         
         console.log('Total ', total);
         return total;
-    }
+    } 
 
 totalNumbers( [
-    'a1b2c3d4e3f',
+    'a1b2c3d4e5f',
     'pqr3stu8vwx',
     'treb7uchet',
-    '1abc1'
+    '1abc2'
 ]);
