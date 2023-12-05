@@ -43,9 +43,4 @@ function findNumber(input) {
         return total;
     } 
 
-totalNumbers( [
-    'a1b2c3d4e5f',
-    'pqr3stu8vwx',
-    'treb7uchet',
-    '1abc2'
-]);
+totalNumbers(input);
